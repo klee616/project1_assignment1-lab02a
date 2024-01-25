@@ -1,6 +1,190 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
-node_modules
-dist
-.cache
+
+# ignore all files starting with . or ~
+.*
+~*
+
+# ignore node/grunt dependency directories
+node_modules/
+
+# Ignore build directories.
+/build
+/dist
+
+# ignore composer vendor directory
+/vendor
+
+# ignore components loaded via Bower
+/bower_components
+
+# ignore jekyll build directory
+/_site
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore private/secret files
+*.der
+*.key
+*.pem
+
+# --------------------------------------------------------
+# BEGIN Explictly Allowed Files (i.e. do NOT ignore these)
+# --------------------------------------------------------
+
+# track these files, if they exist
+!.editorconfig
+!.env.example
+!.git-blame-ignore-revs
+!.gitignore
+!.nvmrc
+!.phpcs.xml.dist
+
+
+# --------------------------------------------------------
+# ignore Specific personal project files
+# --------------------------------------------------------
+
+# local history (Visual Code extension)
+.history
+
+# Pinegrow
+_pginfo
+_pgbackup
+pinegrow.json
+
+# PhotoLine
+.pldbak
+
+# cache folder(s)/directories
+/cache
+.history/
+# Blender
+*.blend1
+.history/css/home_20240119192113.css
+.history/css/home_20240119192318.css
+.history/css/home_20240119210410.css
+.history/css/home_20240119210413.css
+.history/css/home_20240119210453.css
+.history/css/home_20240119210623.css
+.history/css/home_20240119210624.css
+.history/css/home_20240119210659.css
+.history/css/home_20240119210700.css
+.history/css/home_20240119210701.css
+.history/css/home_20240119210822.css
+.history/css/home_20240119210955.css
+.history/css/home_20240119211113.css
+.history/css/home_20240119211117.css
+.history/css/home_20240119211118.css
+.history/css/home_20240119211904.css
+.history/css/home_20240119211905.css
+.history/css/home_20240119212013.css
+.history/css/home_20240119212131.css
+.history/css/home_20240119212136.css
+.history/css/home_20240119212137.css
+.history/css/home_20240119212328.css
+.history/css/home_20240119212703.css
+.history/css/home_20240119212705.css
+.history/css/home_20240119212807.css
+.history/css/home_20240119212943.css
+.history/css/home_20240119213155.css
+.history/css/home_20240119213404.css
+.history/css/home_20240119213429.css
+.history/css/home_20240119213448.css
+.history/css/home_20240119213500.css
+.history/css/home_20240119213907.css
+.history/css/home_20240119214026.css
+.history/css/home_20240119214027.css
+.history/css/home_20240119214113.css
+.history/css/home_20240119214114.css
+.history/css/home_20240119214116.css
+.history/css/home_20240119214134.css
+.history/css/home_20240119214135.css
+.history/css/home_20240119214143.css
+.history/css/home_20240119214330.css
+.history/css/home_20240119214423.css
+.history/css/home_20240119214840.css
+.history/css/home_20240119215002.css
+.history/css/home_20240119215353.css
+.history/css/home_20240119215413.css
+.history/css/home_20240119215632.css
+.history/css/home_20240119215916.css
+.history/css/home_20240119215954.css
+.history/css/home_20240119220017.css
+.history/css/home_20240119220018.css
+.history/css/home_20240119220038.css
+.history/css/home_20240119220039.css
+.history/css/home_20240119220040.css
+.history/css/home_20240119220205.css
+.history/css/home_20240119220206.css
+.history/css/home_20240119220226.css
+.history/css/home_20240119220509.css
+.history/css/home_20240119220530.css
+.history/css/home_20240119220531.css
+.history/css/home_20240119220536.css
+.history/css/home_20240119220549.css
+.history/css/home_20240119220550.css
+.history/css/home_20240119220707.css
+.history/css/home_20240119220708.css
+.history/css/home_20240119220732.css
+.history/css/home_20240119220733.css
+.history/css/home_20240119220816.css
+.history/css/home_20240119221425.css
+.history/css/home_20240119221429.css
+.history/css/home_20240119221446.css
+.history/css/home_20240119221817.css
+.history/css/home_20240119221819.css
+.history/css/home_20240119221847.css
+.history/css/home_20240119221848.css
+.history/css/home_20240119221849.css
+.history/css/home_20240119221940.css
+.history/css/home_20240119221941.css
+.history/index_20231206082644.html
+.history/index_20240119191550.html
+.history/index_20240119192450.html
+.history/index_20240119192458.html
+.history/index_20240119194308.html
+.history/index_20240119194309.html
+.history/index_20240119210834.html
+.history/index_20240119212725.html
+.history/index_20240119214149.html
+.history/index_20240119214450.html
+.history/index_20240119214803.html
+.history/index_20240119214812.html
+.history/index_20240119214846.html
+.history/index_20240119215731.html
+.history/index_20240119220510.html
+.history/index_20240119220511.html
+.history/index_20240119220628.html
+.history/index_20240119220642.html

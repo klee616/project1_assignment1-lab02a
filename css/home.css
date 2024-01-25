@@ -7,6 +7,9 @@
     --bg-gray: #898989;
     --bg-prink: #ec098d;
     --desktop-max-width: 1440px;
+
+    font-family: 'Roboto', sans-serif;
+    color: #949494;
 }
 
 a {
@@ -322,6 +325,7 @@ story-cation main
     display: block;
     padding: 5px 8px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .article{
@@ -401,10 +405,13 @@ story-cation main
     flex: 1 1 25%;
     color: #fff;
 }
-
+.footer-column p{
+   color: #FFFFFF;
+}
 .footer-h3,
 .footer-content {
     margin: 0px;
+    color: #fff;
 
 }
 
@@ -442,6 +449,7 @@ story-cation main
     margin: 0px;
     color: #FFF;
     flex-basis: content;
+    text-transform: uppercase;
 }
 
 .page_footer_line ul li:first-child {

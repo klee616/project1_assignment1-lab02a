@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../week02f"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project-assignment-lat02a"
+	}
+}
